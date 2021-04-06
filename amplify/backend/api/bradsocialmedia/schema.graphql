@@ -1,0 +1,10 @@
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  username: String!
+  email: String
+  avatarKey: String
+  description: String
+  title: String
+  isComplete: Boolean
+}
+ 
